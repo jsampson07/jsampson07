@@ -23,7 +23,7 @@ There are other projects as well, but these are smaller, refresher-based project
 
 ---
 
-## 🛠️ Skills (From outside projects and academia)
+## 🛠️ Skills Used
 - **Languages:** Python, JavaScript
 - **Web Dev:** Flask, React, SQLAlchemy
 - **Networking/Security**: Scapy, Requests, asyncio
