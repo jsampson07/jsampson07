@@ -1,7 +1,7 @@
 # Hi, I’m Joshua 👋
 
 I’m a CS student at Georgia Tech passionate about **OS design, cybersecurity, and full-stack development**.  
-This profile highlights my projects, coursework, and portfolio work.
+This profile highlights my personal projects.
 
 ---
 
@@ -18,6 +18,8 @@ Asynchronous port scanner written in Python.
 - Fast async scanning  
 - CLI interface  
 - Error handling and reporting
+
+There are other projects as well, but these are smaller, refresher based projects. You will also notice a DSA section, which includes various self-implemented data structures.
 
 ---
 
