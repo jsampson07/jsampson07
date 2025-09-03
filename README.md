@@ -1,7 +1,7 @@
 # Hi, I’m Joshua 👋
 
 I’m a CS student at Georgia Tech passionate about **OS design, cybersecurity, and full-stack development**.  
-This profile highlights my personal projects.
+This profile highlights my personal projects from Summer 2025.
 
 ---
 
