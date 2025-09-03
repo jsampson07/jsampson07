@@ -24,9 +24,9 @@ There are other projects as well, but these are smaller, refresher based project
 ---
 
 ## 🛠️ Skills (From outside projects and academia)
-- **Languages:** Python, C, C#, Java, JavaScript, SQL, Assembly
+- **Languages:** Python, JavaScript
 - **Web Dev:** Flask, React, SQLAlchemy
-- **Tools/Platforms**: Git, MySQL, Docker, AndroidSDK
+- **Networking/Security**: Scapy, Requests, asyncio
 
 ---
 
