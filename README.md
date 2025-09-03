@@ -19,7 +19,7 @@ Asynchronous port scanner written in Python.
 - CLI interface  
 - Error handling and reporting
 
-There are other projects as well, but these are smaller, refresher based projects. You will also notice a DSA section, which includes various self-implemented data structures.
+There are other projects as well, but these are smaller, refresher-based projects. You will also notice a DSA section which includes various self-implemented data structures.
 
 ---
 
