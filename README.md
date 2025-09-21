@@ -37,5 +37,4 @@ There are other projects as well, but these are smaller, refresher-based project
 ---
 
 ## 📫 Connect
-- [LinkedIn](https://www.linkedin.com/in/joshua-sampson)  
-- [GitHub Portfolio Website](https://github.com/jsampson07/Summer2025-Portfolio)
+- [LinkedIn](https://www.linkedin.com/in/joshua-sampson)
