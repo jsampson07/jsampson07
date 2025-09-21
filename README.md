@@ -1,7 +1,7 @@
 # Hi, I’m Joshua 👋
 
 I’m a CS student at Georgia Tech passionate about **OS design, cybersecurity, and full-stack development**.  
-This profile highlights my personal projects from Summer 2025.
+This profile highlights some personal projects and relevant work.
 
 ---
 
@@ -18,6 +18,12 @@ Asynchronous port scanner written in Python.
 - Fast async scanning  
 - CLI interface  
 - Error handling and reporting
+
+### 📝 [Tiger-IR Optimizer](https://github.com/jsampson07/Compilers-Project1)
+Compiler optimization project for Georgia Tech’s CS 4240 course.
+- Optimizer for Tiger-IR programs
+- Implements dead code elimination (with reaching definitions)
+- Improves runtime instruction count while preserving correctness
 
 There are other projects as well, but these are smaller, refresher-based projects. You will also notice a DSA section which includes various self-implemented data structures.
 
