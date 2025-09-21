@@ -30,7 +30,7 @@ There are other projects as well, but these are smaller, refresher-based project
 ---
 
 ## 🛠️ Skills Used
-- **Languages:** Python, JavaScript
+- **Languages:** Python, JavaScript, Java
 - **Web Dev:** Flask, React, SQLAlchemy
 - **Networking/Security**: Scapy, Requests, asyncio
 
