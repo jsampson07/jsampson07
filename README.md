@@ -25,7 +25,7 @@ Compiler optimization project for Georgia Tech’s CS 4240 course.
 - Implements dead code elimination (with reaching definitions)
 - Improves runtime instruction count while preserving correctness
 
-### [OS Scheduler, Yield, Load Balancing](https://github.com/jsampson07/AOS-Final-Proj1)
+### ⚖️ [OS Scheduler, Yield, Load Balancing](https://github.com/jsampson07/AOS-Final-Proj1)
 Added functionality to preexisting user-level thread library.
 - Credit scheduler implemented and verified via experiments ran for the report
 - Yield functionality for processes to voluntarily yield
