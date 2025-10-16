@@ -20,7 +20,7 @@ Asynchronous port scanner written in Python.
 - Error handling and reporting
 
 ### 📝 [Tiger-IR Optimizer](https://github.com/jsampson07/Compilers-Project1)
-Compiler optimization project for Georgia Tech’s CS 4240 course.
+Compiler optimization project.
 - Optimizer for Tiger-IR programs
 - Implements dead code elimination (with reaching definitions)
 - Improves runtime instruction count while preserving correctness
