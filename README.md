@@ -8,7 +8,7 @@ This profile highlights some personal projects and relevant work.
 ## 🚀 Featured Projects
 
 ### 🍎 [MacroTracker](https://github.com/jsampson07/Summer2025-Portfolio/tree/main/MacroTracker)
-A full-stack nutrition tracking application. Currently towards the beginning stages for the front-end, but I plan on continuing my work throughout the school year. 
+A full-stack nutrition tracking application. Currently minimal front-end functionaltiy.
 - **Backend:** Flask + SQLAlchemy + JWT auth  
 - **Frontend:** React
 - **Features:** Meal logging, macro tracking, progress summaries, register/log-in
