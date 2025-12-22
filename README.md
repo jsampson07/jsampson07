@@ -25,8 +25,6 @@ Compiler optimization project.
 - Implements dead code elimination (with reaching definitions)
 - Improves runtime instruction count while preserving correctness
 
-There are other projects as well, but these are smaller, refresher-based projects. You will also notice a DSA section which includes various self-implemented data structures.
-
 ---
 
 ## 🛠️ Skills Used
