@@ -34,8 +34,9 @@ Compiler optimization project.
 ---
 
 ## 🛠️ Skills Used
-- **Languages:** Python, JavaScript, Java, C
-- **Web Dev:** Flask, React, SQLAlchemy
+- **Languages:** Python, C++, C, Java, JavaScript
+- **Frameworks and Libraries:** gRPC, Protobuf, React, Flask, SQLAlchemy
+- **Tools and Platforms:** Git, Docker
 - **Networking/Security**: Scapy, Requests, asyncio
 
 ---
