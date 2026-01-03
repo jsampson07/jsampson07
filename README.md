@@ -9,6 +9,7 @@ This profile highlights some personal projects and relevant work.
 
 ### 🍎 [MacroTracker](https://github.com/jsampson07/Summer2025-Portfolio/tree/main/MacroTracker)
 STATUS: Work in Progress
+
 A full-stack nutrition tracking application. Currently minimal front-end functionaltiy.
 - **Backend:** Flask + SQLAlchemy + JWT auth  
 - **Frontend:** React
@@ -22,6 +23,7 @@ A distributed key-value storage system (GTStore) supporting networked node commu
 
 ### 🔎 [Port Scanner Tool](https://github.com/jsampson07/Summer2025-Portfolio/tree/main/port-scanner-tool)
 STATUS: Work in Progress
+
 Asynchronous port scanner written in Python.  
 - Fast async scanning  
 - CLI interface  
