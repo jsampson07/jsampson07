@@ -21,14 +21,6 @@ A distributed key-value storage system (GTStore) supporting networked node commu
 - Applied lessons from systems design by building a multi-process distributed system from scratch, reinforcing understanding of practical distributed communication and data consistency strategies.
 - Included comprehensive project documentation, tests, and reports detailing design decisions, performance considerations, and verification of correctness under simulated conditions.
 
-### 🔎 [Port Scanner Tool](https://github.com/jsampson07/Summer2025-Portfolio/tree/main/port-scanner-tool)
-STATUS: Work in Progress
-
-Asynchronous port scanner written in Python.  
-- Fast async scanning  
-- CLI interface  
-- Error handling and reporting
-
 ### 📝 [Tiger-IR Optimizer](https://github.com/jsampson07/Compilers-Project1)
 Compiler optimization project.
 - Optimizer for Tiger-IR programs
