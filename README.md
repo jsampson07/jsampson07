@@ -21,19 +21,12 @@ A distributed key-value storage system (GTStore) supporting networked node commu
 - Applied lessons from systems design by building a multi-process distributed system from scratch, reinforcing understanding of practical distributed communication and data consistency strategies.
 - Included comprehensive project documentation, tests, and reports detailing design decisions, performance considerations, and verification of correctness under simulated conditions.
 
-### 📝 [Tiger-IR Optimizer](https://github.com/jsampson07/Compilers-Project1)
-Compiler optimization project.
-- Optimizer for Tiger-IR programs
-- Implements dead code elimination (with reaching definitions)
-- Improves runtime instruction count while preserving correctness
-
 ---
 
 ## 🛠️ Skills Used
 - **Languages:** Python, C++, C, Java, JavaScript
 - **Frameworks and Libraries:** gRPC, Protobuf, React, Flask, SQLAlchemy
 - **Tools and Platforms:** Git, Docker
-- **Networking/Security**: Scapy, Requests, asyncio
 
 ---
 
