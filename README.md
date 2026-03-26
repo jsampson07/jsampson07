@@ -24,7 +24,7 @@ A distributed key-value storage system (GTStore) supporting networked node commu
 ---
 
 ## 🛠️ Skills Used
-- **Languages:** Python, C++, C, Java, JavaScript
+- **Languages:** Python, C++, C, JavaScript
 - **Frameworks and Libraries:** gRPC, Protobuf, React, Flask, SQLAlchemy
 - **Tools and Platforms:** Git, Docker
 
