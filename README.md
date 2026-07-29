@@ -1,6 +1,6 @@
 # Hi, I’m Joshua
 
-I’m a 4th year CS undergrad student at Georgia Tech passionate about **full-stack development (specifically backend development), OS design, and infrastructure/systems programming.**.  
+I’m a 4th year CS undergrad student at Georgia Tech passionate about **full-stack development (specifically backend development), OS design, and infrastructure/systems programming**.  
 This profile highlights some personal projects and relevant work.
 
 ---
