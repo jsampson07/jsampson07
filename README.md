@@ -16,7 +16,7 @@ A company-targeted job intelligence platform and explainable role-matching engin
 - Developed authenticated saved searches with persisted check runs, new-match badges, in-app alert state, editable criteria, and per-user ownership controls.
 - Created internal evaluation and benchmarking tools for search relevance, search performance, and ingestion metrics, with latest local validation covering 1300+ tests across API, web, and worker packages.
 
-### 🔎 [RoleSignal](https://github.com/jsampson07/Targeted-Outreach-Tool)
+### 🔎 [Recruiter Outreach Tool](https://github.com/jsampson07/Targeted-Outreach-Tool)
 
 PLACEHOLDER TEXT FOR NOW
 
