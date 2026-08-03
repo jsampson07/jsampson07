@@ -16,6 +16,10 @@ A company-targeted job intelligence platform and explainable role-matching engin
 - Developed authenticated saved searches with persisted check runs, new-match badges, in-app alert state, editable criteria, and per-user ownership controls.
 - Created internal evaluation and benchmarking tools for search relevance, search performance, and ingestion metrics, with latest local validation covering 1300+ tests across API, web, and worker packages.
 
+### 🔎 [RoleSignal](https://github.com/jsampson07/Targeted-Outreach-Tool)
+
+PLACEHOLDER TEXT FOR NOW
+
 ### 🖥️ [Distributed System](https://github.com/jsampson07/DistributedSystems/tree/main/gtstore)
 A distributed key-value storage system (GTStore) supporting networked node communication and coordinated data storage.
 - Focused on key distributed system properties including scalability, availability, and resilience to node failure.
@@ -25,7 +29,7 @@ A distributed key-value storage system (GTStore) supporting networked node commu
 ### 🍎 [MacroTracker](https://github.com/jsampson07/Summer2025-Portfolio/tree/main/MacroTracker)
 STATUS: Work in Progress
 
-A full-stack nutrition tracking application. Currently minimal front-end functionaltiy.
+A full-stack nutrition tracking application. Currently minimal front-end functionality.
 - **Backend:** Flask + SQLAlchemy + JWT auth  
 - **Frontend:** React
 - **Features:** Meal logging, macro tracking, progress summaries, register/log-in
@@ -34,7 +38,7 @@ A full-stack nutrition tracking application. Currently minimal front-end functio
 
 ## 🛠️ Skills Used
 - **Languages:** TypeScript, Python, C++, SQL, JavaScript, CSS
-- **Frameworks and Libraries:** Node.js, Express, Prisma, BullMQ, React, Vite, gRPC, Protobuf, Flask, SQLAlchemy
+- **Frameworks and Libraries:** Node.js, Express, FastAPI, Prisma, BullMQ, React, Vite, gRPC, Protobuf, Flask, SQLAlchemy
 - **Tools and Platforms:** PostgreSQL, Redis, Docker Compose, Git
 - **Testing Tools:** Vitest, Supertest, React Testing Library
 
