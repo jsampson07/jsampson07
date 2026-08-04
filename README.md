@@ -1,6 +1,6 @@
 # Hi, I’m Joshua
 
-I’m a 4th year CS undergrad student at Georgia Tech passionate about **full-stack development (specifically backend development), OS design, and infrastructure/systems programming**.  
+I’m a 4th year CS undergrad student at Georgia Tech passionate about **full-stack development (specifically backend development), infrastructure/systems programming, and OS design**.  
 This profile highlights some personal projects and relevant work.
 
 ---
@@ -16,9 +16,15 @@ A company-targeted job intelligence platform and explainable role-matching engin
 - Developed authenticated saved searches with persisted check runs, new-match badges, in-app alert state, editable criteria, and per-user ownership controls.
 - Created internal evaluation and benchmarking tools for search relevance, search performance, and ingestion metrics, with latest local validation covering 1300+ tests across API, web, and worker packages.
 
-### 🔎 [Recruiter Outreach Tool](https://github.com/jsampson07/Targeted-Outreach-Tool)
+### 🎯 [Targeted Outreach Tool](https://github.com/jsampson07/Targeted-Outreach-Tool)
+STATUS: Core pipeline demoable end-to-end (local); public deployment deliberately deferred (see docs)
 
-PLACEHOLDER TEXT FOR NOW
+A tool that discovers a plausible hiring contact for a target company, then drafts a resume↔JD-grounded cold email with an automated quality check — copy-paste only, the app never sends mail.
+- Built a Python/FastAPI backend and React 19/TypeScript frontend around a multi-vendor `ContactProvider` interface (Hunter.io live, Apollo/Anymail Finder deferred, plus a scripted mock provider for development), using a status-result pattern so rate limits, errors, and empty results degrade gracefully instead of raising exceptions the orchestrator has to catch everywhere.
+- Designed an LLM pipeline — structured resume/JD extraction, match/gap analysis, grounded email generation, and rubric-based evaluation — around a shared Anthropic API client wrapper with Pydantic-validated structured outputs at every call site.
+- Built an LLM-as-judge eval step with three binary hard gates (no unsupported claims, correct contact name, no unprompted gap admission) and five graded dimensions, with a silent single retry on gate failure before a result is ever shown to the user.
+- Implemented tiered contact discovery (recruiter → generalist TA → hiring manager → founder/CEO fallback) with a Postgres-backed cache for cross-user credit savings, and an explainable confidence signal built from provider verification tier, cross-provider corroboration, employment-currency, and domain checks.
+- Hand-rolled JWT auth (short-lived access token + DB-backed revocable refresh token) over a 9-entity PostgreSQL schema (SQLAlchemy + Alembic) covering users, resumes, job descriptions, companies, raw per-provider results, contacts, generated emails, outcomes, and refresh tokens.
 
 ### 🖥️ [Distributed System](https://github.com/jsampson07/DistributedSystems/tree/main/gtstore)
 A distributed key-value storage system (GTStore) supporting networked node communication and coordinated data storage.
@@ -30,18 +36,18 @@ A distributed key-value storage system (GTStore) supporting networked node commu
 STATUS: Work in Progress
 
 A full-stack nutrition tracking application. Currently minimal front-end functionality.
-- **Backend:** Flask + SQLAlchemy + JWT auth  
-- **Frontend:** React
+- **Backend:** Flask + SQLAlchemy + JWT auth, Python
+- **Frontend:** React, JavaScript
 - **Features:** Meal logging, macro tracking, progress summaries, register/log-in
 
 ---
 
 ## 🛠️ Skills Used
-- **Languages:** TypeScript, Python, C++, SQL, JavaScript, CSS
-- **Frameworks and Libraries:** Node.js, Express, FastAPI, Prisma, BullMQ, React, Vite, gRPC, Protobuf, Flask, SQLAlchemy
-- **Tools and Platforms:** PostgreSQL, Redis, Docker Compose, Git
-- **Testing Tools:** Vitest, Supertest, React Testing Library
-
+- **Languages:** TypeScript, Python, C++, SQL, JavaScript
+- **Frameworks & Libraries:** React, Node.js, Express, FastAPI, Flask, SQLAlchemy, Prisma, BullMQ, gRPC, Protobuf, PyJWT
+- **Tools & Platforms:** PostgreSQL, Redis, Docker, Git, Alembic
+- **Applied AI:** Anthropic API — structured extraction, match/gap analysis, LLM-as-judge evaluation pipelines
+- **Testing:** Vitest, Supertest, React Testing Library
 ---
 
 ## 📫 Connect
