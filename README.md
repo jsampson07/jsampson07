@@ -1,6 +1,6 @@
 # Hi, I’m Joshua
 
-I’m a recent grad from Georgia Tech with my bachelors in Computer Science passionate about **full-stack development (specifically backend development), infrastructure/systems programming, and OS design**.
+I’m a recent grad from Georgia Tech with my bachelor's in computer science passionate about **full-stack development (specifically backend development), infrastructure/systems programming, and OS design**.
 This profile highlights some personal projects and relevant work.
 
 ---
