@@ -7,7 +7,7 @@ This profile highlights some personal projects and relevant work.
 
 ## 🚀 Featured Projects
 
-### 🔎 [RoleSignal](https://github.com/jsampson07/rolesignal)
+### 🔎 [RoleSignal: Company-Targeted Search](https://github.com/jsampson07/rolesignal)
 
 A company-targeted job intelligence platform and explainable role-matching engine that helps job seekers find relevant roles across inconsistent ATS career pages.
 - Built a TypeScript monorepo with a React frontend, Express API, PostgreSQL database, Prsma ORM, BullMQ worker, Redis queueing, and deterministic rule-based search.
@@ -16,10 +16,10 @@ A company-targeted job intelligence platform and explainable role-matching engin
 - Developed authenticated saved searches with persisted check runs, new-match badges, in-app alert state, editable criteria, and per-user ownership controls.
 - Created internal evaluation and benchmarking tools for search relevance, search performance, and ingestion metrics, with latest local validation covering 1300+ tests across API, web, and worker packages.
 
-### 🎯 [Targeted Outreach Tool](https://github.com/jsampson07/inroad)
+### 🎯 [Inroad: Targeted Outreach Platform](https://github.com/jsampson07/inroad)
 STATUS: Core pipeline demoable end-to-end (local); public deployment deliberately deferred (see docs)
 
-A tool that discovers a plausible hiring contact for a target company, then drafts a resume↔JD-grounded cold email with an automated quality check — copy-paste only, the app never sends mail.
+A platform that discovers a plausible hiring contact for a target company, then drafts a resume↔JD-grounded cold email with an automated quality check — copy-paste only, the app never sends mail.
 - Built a Python/FastAPI backend and React 19/TypeScript frontend around a multi-vendor `ContactProvider` interface (Hunter.io live, Apollo/Anymail Finder deferred, plus a scripted mock provider for development), using a status-result pattern so rate limits, errors, and empty results degrade gracefully instead of raising exceptions the orchestrator has to catch everywhere.
 - Designed an LLM pipeline — structured resume/JD extraction, match/gap analysis, grounded email generation, and rubric-based evaluation — around a shared Anthropic API client wrapper with Pydantic-validated structured outputs at every call site.
 - Built an LLM-as-judge eval step with three binary hard gates (no unsupported claims, correct contact name, no unprompted gap admission) and five graded dimensions, with a silent single retry on gate failure before a result is ever shown to the user.
