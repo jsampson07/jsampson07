@@ -16,7 +16,7 @@ A company-targeted job intelligence platform and explainable role-matching engin
 - Developed authenticated saved searches with persisted check runs, new-match badges, in-app alert state, editable criteria, and per-user ownership controls.
 - Created internal evaluation and benchmarking tools for search relevance, search performance, and ingestion metrics, with latest local validation covering 1300+ tests across API, web, and worker packages.
 
-### 🎯 [Targeted Outreach Tool](https://github.com/jsampson07/Targeted-Outreach-Tool)
+### 🎯 [Targeted Outreach Tool](https://github.com/jsampson07/inroad)
 STATUS: Core pipeline demoable end-to-end (local); public deployment deliberately deferred (see docs)
 
 A tool that discovers a plausible hiring contact for a target company, then drafts a resume↔JD-grounded cold email with an automated quality check — copy-paste only, the app never sends mail.
