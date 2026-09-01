@@ -46,7 +46,7 @@ A platform that discovers a plausible hiring contact for a target company, then 
 - Implemented tiered contact discovery (recruiter → generalist TA → hiring manager → founder/CEO fallback) with a Postgres-backed cache for cross-user credit savings, and an explainable confidence signal built from provider verification tier, cross-provider corroboration, employment-currency, and domain checks.
 - Hand-rolled JWT auth (short-lived access token + DB-backed revocable refresh token) over a 9-entity PostgreSQL schema (SQLAlchemy + Alembic) covering users, resumes, job descriptions, companies, raw per-provider results, contacts, generated emails, outcomes, and refresh tokens.
 
-### 🖥️ [Distributed System](https://github.com/jsampson07/distributed_gtstore)
+### 🖥️ [GTStore: Distributed Key-Value Store](https://github.com/jsampson07/distributed_gtstore)
 A distributed, replicated, in-memory key-value store in C++ over gRPC, using a centralized manager for sharding, replica placement, and failure recovery, with a strong write-all consistency model.
 - Sharded keys across N storage nodes via modulo hashing for deterministic, O(1) key→node lookup.
 - Replicated each key onto K nodes via ring-based placement, tolerating up to K−1 node failures with no data loss.
