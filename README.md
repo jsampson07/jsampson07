@@ -26,7 +26,31 @@ A platform that discovers a plausible hiring contact for a target company, then 
 - Implemented tiered contact discovery (recruiter → generalist TA → hiring manager → founder/CEO fallback) with a Postgres-backed cache for cross-user credit savings, and an explainable confidence signal built from provider verification tier, cross-provider corroboration, employment-currency, and domain checks.
 - Hand-rolled JWT auth (short-lived access token + DB-backed revocable refresh token) over a 9-entity PostgreSQL schema (SQLAlchemy + Alembic) covering users, resumes, job descriptions, companies, raw per-provider results, contacts, generated emails, outcomes, and refresh tokens.
 
-### 🖥️ [Distributed System](https://github.com/jsampson07/DistributedSystems/tree/main/gtstore)
+### 🔀 [Driftstore: Leaderless, Gossip-Coordinated Key-Value Store](https://github.com/jsampson07/driftstore)
+STATUS: Phases 0–3 of 9 complete (gossip membership, consistent hashing, quorum
+coordination); vector clocks, hinted handoff, and read-repair in progress —
+see [PROGRESS.md](https://github.com/jsampson07/driftstore/blob/main/PROGRESS.md) for the phase-by-phase log.
+
+The deliberate AP-inverted counterpart to GTStore below — same key-value
+storage problem, every core decision flipped: gossip instead of centralized
+heartbeats, consistent hashing instead of modulo, sloppy quorum instead of
+write-all.
+- Implemented Dynamo-style gossip membership (periodic push-pull table
+  exchange, LWW + writer-id tiebreak merge) with local, per-node reachability
+  tracking kept deliberately separate from cluster-wide membership state —
+  they converge on different timescales for different reasons.
+- Built consistent hashing with virtual nodes for data placement, choosing
+  virtual-node count empirically by measuring load-distribution variance
+  rather than picking arbitrarily.
+- Any node can coordinate a request — no manager, no client-side fan-out —
+  with tunable N/W/R sloppy quorum (N=3/W=2/R=2, R+W>N enforced for
+  guaranteed read/write overlap).
+- Debug primarily via structured, correlated logs across independent nodes
+  plus reproducible bash harness scenarios (join, remove/reboot, replica-
+  boundary, coordinator-rotation) — gdb is a fallback, not the default, since
+  there's no single leader or log to step through.
+
+### 🖥️ [Distributed System](https://github.com/jsampson07/distributed_gtstore)
 A distributed key-value storage system (GTStore) supporting networked node communication and coordinated data storage.
 - Focused on key distributed system properties including scalability, availability, and resilience to node failure.
 - Applied lessons from systems design by building a multi-process distributed system from scratch, reinforcing understanding of practical distributed communication and data consistency strategies.
