@@ -69,7 +69,7 @@ A full-stack nutrition tracking application. Currently minimal front-end functio
 ## 🛠️ Skills Used
 - **Languages:** TypeScript, Python, C++, SQL, JavaScript
 - **Frameworks & Libraries:** React, Node.js, Express, FastAPI, Flask, SQLAlchemy, Prisma, BullMQ, gRPC, Protobuf, PyJWT
-- **Tools & Platforms:** PostgreSQL, Redis, Docker, Git, Alembic
+- **Tools & Platforms:** PostgreSQL, Redis, Bash, Docker, Git, Alembic
 - **Applied AI:** Anthropic API — structured extraction, match/gap analysis, LLM-as-judge evaluation pipelines
 - **Testing:** Vitest, Supertest, React Testing Library
 ---
