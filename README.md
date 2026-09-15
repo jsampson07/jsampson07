@@ -48,19 +48,11 @@ A platform that discovers a plausible hiring contact for a target company, then 
 - Implemented tiered contact discovery (recruiter → generalist TA → hiring manager → founder/CEO) backed by a Postgres cross-user cache, with an explainable confidence signal from verification tier, cross-provider corroboration, employment-currency, and domain checks.
 - Hand-rolled JWT auth (short-lived access + DB-backed revocable refresh tokens) over a 9-entity PostgreSQL schema (SQLAlchemy + Alembic) spanning resumes, job descriptions, contacts, generated emails, and outcomes.
 
-### 🍎 [MacroTracker](https://github.com/jsampson07/Summer2025-Portfolio/tree/main/MacroTracker)
-STATUS: Work in Progress
-
-A full-stack nutrition tracking application. Currently minimal front-end functionality.
-- **Backend:** Flask + SQLAlchemy + JWT auth, Python
-- **Frontend:** React, JavaScript
-- **Features:** Meal logging, macro tracking, progress summaries, register/log-in
-
 ---
 
 ## 🛠️ Skills Used
-- **Languages:** C++, TypeScript, Python, SQL, JavaScript
-- **Frameworks & Libraries:** gRPC, Protobuf, React, Node.js, Express, FastAPI, Flask, SQLAlchemy, Prisma, BullMQ, PyJWT
+- **Languages:** C++, TypeScript, Python, SQL
+- **Frameworks & Libraries:** gRPC, Protobuf, React, Node.js, Express, FastAPI, SQLAlchemy, Prisma, BullMQ, PyJWT
 - **Tools & Platforms:** PostgreSQL, Redis, Bash, Docker, Git, Alembic
 - **Applied AI:** Anthropic API — structured extraction, match/gap analysis, LLM-as-judge evaluation pipelines
 - **Testing:** Vitest, Supertest, React Testing Library
