@@ -8,25 +8,19 @@ This profile highlights some personal projects and relevant work.
 ## 🚀 Featured Projects
 
 ### 🔀 [Driftstore: Leaderless, Gossip-Coordinated Key-Value Store](https://github.com/jsampson07/driftstore)
-STATUS: Phases 0–3 of 9 complete (gossip membership, consistent hashing, quorum
-coordination); vector clocks, hinted handoff, and read-repair in progress —
-see [PROGRESS.md](https://github.com/jsampson07/driftstore/blob/main/PROGRESS.md) for the phase-by-phase log.
+STATUS: Phases 0–6 of 9 complete (gossip membership, consistent hashing, quorum
+coordination, vector clocks, hinted handoff, read-repair); dashboard and
+fault-injection harness remaining — see [PROGRESS.md](https://github.com/jsampson07/driftstore/blob/main/PROGRESS.md) for the phase-by-phase log.
 
-The deliberate AP counterpart to GTStore above — same key-value problem,
-every core decision inverted: gossip instead of centralized heartbeats,
-consistent hashing instead of modulo, sloppy quorum instead of write-all.
-- Built Dynamo-style gossip membership (push-pull merge, LWW conflict
-  resolution), keeping local failure detection separate from gossiped
-  membership — they converge on different timescales, for different reasons.
-- Replaced modulo hashing with consistent hashing + virtual nodes, bounding
-  key remapping to ~1/N of the keyspace on node join/leave; virtual-node
-  count sized empirically via measured load-distribution variance.
-- Enabled any node to coordinate a request (no manager, no client fan-out)
-  via tunable sloppy quorum (N=3/W=2/R=2, R+W>N guarantees overlap).
-- Debug via structured, correlated logs across independent nodes and
-  reproducible failure-injection scripts, not gdb — no single leader or
-  log to step through.
-
+A leaderless, gossip-coordinated distributed key-value store in C++ over
+gRPC, staying available through node failures and network partitions with
+no central coordinator.
+- Built Dynamo-style gossip membership with push-pull table merge and last-writer-wins resolution, converging cluster view across nodes with no central registry.
+- Implemented consistent hashing with virtual nodes for key placement, bounding remapping to ~1/N of the keyspace on any node join or leave.
+- Enabled any node to coordinate a read or write via tunable sloppy quorum (N=3/W=2/R=2, R+W>N guarantees overlap), with no single point of coordination.
+- Designed per-key vector clocks with causal dominance/concurrency detection and last-writer-wins resolution, backed by hinted handoff and read-repair to reconcile replicas without blocking writes.
+- Verified correctness with 9 reproducible fault-injection scripts and dedicated unit tests, debugging via correlated structured logs across independently-running nodes instead of a debugger.
+  
 ### 🖥️ [GTStore: Distributed Key-Value Store](https://github.com/jsampson07/distributed_gtstore)
 A distributed, replicated, in-memory key-value store in C++ over gRPC, using a centralized manager for sharding, replica placement, and failure recovery, with a strong write-all consistency model.
 - Sharded keys across N storage nodes via modulo hashing for deterministic, O(1) key→node lookup.
@@ -65,8 +59,8 @@ A full-stack nutrition tracking application. Currently minimal front-end functio
 ---
 
 ## 🛠️ Skills Used
-- **Languages:** TypeScript, Python, C++, SQL, JavaScript
-- **Frameworks & Libraries:** React, Node.js, Express, FastAPI, Flask, SQLAlchemy, Prisma, BullMQ, gRPC, Protobuf, PyJWT
+- **Languages:** C++, TypeScript, Python, SQL, JavaScript
+- **Frameworks & Libraries:** gRPC, Protobuf, React, Node.js, Express, FastAPI, Flask, SQLAlchemy, Prisma, BullMQ, PyJWT
 - **Tools & Platforms:** PostgreSQL, Redis, Bash, Docker, Git, Alembic
 - **Applied AI:** Anthropic API — structured extraction, match/gap analysis, LLM-as-judge evaluation pipelines
 - **Testing:** Vitest, Supertest, React Testing Library
